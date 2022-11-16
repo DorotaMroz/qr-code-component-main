@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+/* Base Syling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bgBody: hsl(212, 45%, 89%);
+  --bgQrCard: hsl(0, 0%, 100%);
+  --fontSize: 1rem;
+  --bgQrImage: hsl(218, 44%, 22%);
+  --fontColor: hsl(220, 15%, 55%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--bgBody);
+  font-family: Outfit, sans-serif;
+}
+
+h1 {
+  font-size: var(--fontSize);
+  font-weight: 700;
+}
+
+p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--fontColor);
+}
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+/* QR-card-container Styling */
+
+.QR-card-container {
+  background-color: var(--bgQrCard);
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+}
+
+/* Image Styling */
+
+.qr-img-container {
+  width: 13rem;
+  height: auto;
+}
+
+/* Content Styling */
+
+.content {
+  width: 13rem;
+  height: auto;
+}
+
+.content h1,
+.content p {
+  text-align: center;
+  margin: 0.6rem;
+}
